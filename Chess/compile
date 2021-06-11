@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ "$1" == "static" ]; then
+	s="-s"
+fi
+g++ -std=c++11 -Iinclude src/*.cpp main.cpp -o chess -lsfml-graphics$s -lsfml-window$s -lsfml-audio$s -lsfml-system$s -lsfml-network$s
